@@ -1,6 +1,5 @@
 package ru.lidzhiev.spring5webappMaven.entity;
 
-
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Objects;
@@ -11,8 +10,8 @@ public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private java.lang.String author;
-    private java.lang.String isbn;
+    private String author;
+    private String isbn;
     @OneToOne
     private Publisher publisher;
 
@@ -23,32 +22,32 @@ public class Book {
     public Book() {
     }
 
-    public Book(java.lang.String author, java.lang.String isbn, Publisher publisher) {
+    public Book(String author, String isbn, Publisher publisher) {
         this.author = author;
         this.isbn = isbn;
         this.publisher = publisher;
     }
 
-    public Book(java.lang.String author, java.lang.String isbn, Publisher publisher, Set<Author> authors) {
+    public Book(String author, String isbn, Publisher publisher, Set<Author> authors) {
         this.author = author;
         this.isbn = isbn;
         this.publisher = publisher;
         this.authors = authors;
     }
 
-    public java.lang.String getAuthor() {
+    public String getAuthor() {
         return author;
     }
 
-    public void setAuthor(java.lang.String author) {
+    public void setAuthor(String author) {
         this.author = author;
     }
 
-    public java.lang.String getIsbn() {
+    public String getIsbn() {
         return isbn;
     }
 
-    public void setIsbn(java.lang.String isbn) {
+    public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
 
@@ -82,7 +81,7 @@ public class Book {
     }
 
     @Override
-    public java.lang.String toString() {
+    public String toString() {
         return "Book{" +
                 "id=" + id +
                 ", author='" + author + '\'' +

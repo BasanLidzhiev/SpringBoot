@@ -15,7 +15,7 @@ public class Author {
 
 
     @ManyToMany(mappedBy = "authors")
-    Set<Book> books = new HashSet<>();
+    private Set<Book> books = new HashSet<>();
 
     public Author() {
     }
@@ -77,7 +77,7 @@ public class Author {
     }
 
     @Override
-    public java.lang.String toString() {
+    public String toString() {
         return "Author{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +

@@ -13,7 +13,7 @@ public class Publisher {
     private String name;
     private String Address;
 
-    public Publisher(java.lang.String name, java.lang.String address) {
+    public Publisher(String name, String address) {
         this.name = name;
         Address = address;
     }
@@ -26,19 +26,19 @@ public class Publisher {
         this.id = id;
     }
 
-    public java.lang.String getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(java.lang.String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public java.lang.String getAddress() {
+    public String getAddress() {
         return Address;
     }
 
-    public void setAddress(java.lang.String address) {
+    public void setAddress(String address) {
         Address = address;
     }
 }
