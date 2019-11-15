@@ -77,7 +77,7 @@ public class Author {
     }
 
     @Override
-    public Publisher toString() {
+    public String toString() {
         return "Author{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
