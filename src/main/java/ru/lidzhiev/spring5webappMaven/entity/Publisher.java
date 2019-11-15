@@ -10,8 +10,8 @@ public class Publisher {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private java.lang.String name;
-    private java.lang.String Address;
+    private String name;
+    private String Address;
 
     public Publisher(java.lang.String name, java.lang.String address) {
         this.name = name;
